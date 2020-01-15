@@ -1,0 +1,38 @@
+{
+  "name": "ttd-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "react-scripts test",
+    "test-vanilla": "jest"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./src/setupTests.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less|scss)$": "identity-obj-proxy"
+    }
+  },
+  "author": "Eward Somers",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.2",
+    "@testing-library/react": "^9.3.1",
+    "axios": "^0.19.0",
+    "axios-mock-adapter": "^1.17.0",
+    "jest": "^24.9.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-scripts": "^3.2.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "babel-jest": "^24.9.0",
+    "identity-obj-proxy": "^3.0.0",
+    "react-test-renderer": "^16.12.0"
+  }
+}
